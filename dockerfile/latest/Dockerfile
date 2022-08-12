@@ -15,7 +15,6 @@ RUN echo "alias ll='ls -al'" >> /etc/bashrc && \
     echo "alias ..='cd ..'" >> /etc/bashrc && \
     echo "alias ...='cd ../..'" >> /etc/bashrc && \
     echo "alias tailf='tail -f'" >> /etc/bashrc && \
-    echo "(dnf updateinfo >/dev/null 2>&1 &)" >> /etc/bashrc && \
     echo "set nu" >> /etc/vimrc && \
     ln -s /usr/bin/python3 /usr/bin/python && \
     groupadd sh -g 1024 && \
