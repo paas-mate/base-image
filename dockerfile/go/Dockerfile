@@ -1,6 +1,6 @@
 FROM ttbb/base:latest
 
-ARG version=1.18.1
+ARG version=1.19
 ARG TARGETARCH
 
 RUN wget https://golang.org/dl/go$version.linux-$TARGETARCH.tar.gz && \
