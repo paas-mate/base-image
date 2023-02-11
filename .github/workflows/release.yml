@@ -29,98 +29,98 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: base image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/latest
           push: true
           tags: ttbb/base:latest
           platforms: linux/amd64,linux/arm64
       - name: base erlang image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/erlang
           push: true
           tags: ttbb/base:erlang
           platforms: linux/amd64,linux/arm64
       - name: base go image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/go
           push: true
           tags: ttbb/base:go
           platforms: linux/amd64,linux/arm64
       - name: base jdk8 image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/jdk8
           push: true
           tags: ttbb/base:jdk8
           platforms: linux/amd64,linux/arm64
       - name: base jdk11 image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/jdk11
           push: true
           tags: ttbb/base:jdk11
           platforms: linux/amd64,linux/arm64
       - name: base jdk11-ssh image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/jdk11-ssh
           push: true
           tags: ttbb/base:jdk11-ssh
           platforms: linux/amd64,linux/arm64
       - name: base jdk17 image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/jdk17
           push: true
           tags: ttbb/base:jdk17
           platforms: linux/amd64,linux/arm64
       - name: base jdk17-ssh image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/jdk17-ssh
           push: true
           tags: ttbb/base:jdk17-ssh
           platforms: linux/amd64,linux/arm64
       - name: base clojure image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/clojure
           push: true
           tags: ttbb/base:clojure
           platforms: linux/amd64,linux/arm64
       - name: base network image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/network
           push: true
           tags: ttbb/base:network
           platforms: linux/amd64,linux/arm64
       - name: base node image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/node
           push: true
           tags: ttbb/base:node
           platforms: linux/amd64,linux/arm64
       - name: base php image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/php
           push: true
           tags: ttbb/base:php
           platforms: linux/amd64,linux/arm64
       - name: base ruby image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/ruby
           push: true
           tags: ttbb/base:ruby
           platforms: linux/amd64,linux/arm64
       - name: base rust image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: dockerfile/rust
           push: true
